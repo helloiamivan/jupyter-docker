@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  jupyterlab:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - '/Users/ivanchan/dev/jupyter-notebooks:/home/${USER}/notebooks' # This mounts a user defined location as the working directory in the container
