@@ -4,9 +4,11 @@
 - List required python packages in ```requirements.txt```
 
 ```
-# Builds Docker Image
-bash build.sh
 
-# Runs Docker Container
+# Runs Docker Container (Linux)
 bash launch.sh
+
+# Runs Docker Container (Windows)
+launch.bat
+
 ```
