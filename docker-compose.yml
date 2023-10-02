@@ -8,4 +8,4 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - '/Users/ivanchan/dev/jupyter-notebooks:/home/${USER}/notebooks' # This mounts a user defined location as the working directory in the container
+      - '~/Development/jupyter-notebooks:/home/jovyan/notebooks' # This mounts a user defined location as the working directory in the container
