@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Non root user
-ENV USER='ivanchan'
+ENV USER='jovyan'
 ENV UID='32155'
 RUN useradd -u $UID -ms /bin/bash $USER
 USER $USER
