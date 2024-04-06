@@ -33,5 +33,5 @@ RUN rm -f ./requirements.txt
 # Run Jupyter Instance
 EXPOSE 8888
 RUN jupyter notebook --generate-config
-RUN echo "c.NotebookApp.password=u'sha256:59ea89b30c8f:a63b46624a4e2b5849db25fa2da32be71ee2bae95503301416f3dcf0bf0118a5'" >> ~/.jupyter/jupyter_notebook_config.py
+RUN echo "c.NotebookApp.password=u'sha256:99de87fa071d:8af20fbf6fd41c9f71e744b674f7ea1563cd2136c67bd8bf56e32a08aedaabcf'" >> ~/.jupyter/jupyter_notebook_config.py
 ENTRYPOINT ["jupyter","notebook","--no-browser","--ip=*"]
